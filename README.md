@@ -60,3 +60,6 @@ if angular is loaded, it will return an object
 
 Set things up so within your public folder you have a file called app.js for the 
 application to live in
+
+We will use a module called the angular route module
+There is usually one main module in an angular application
