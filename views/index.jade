@@ -17,3 +17,12 @@ html
             // angular manipulates the dom
             // for sanity check you can add {{ 5 * 5 }}  to page and see if it loads as 25
             .well Welcome to My World {{ 5 * 5 }} 
+            
+            .alert
+                div(ng-controller="MyCtrl")
+            .alert.alert-warning
+                div(ng-controller="MyCtrl") {{ name }}
+                    form.form
+                        div.form-group
+                            label Name
+                            input.form-control(ng-model="name")
