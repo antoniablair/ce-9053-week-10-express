@@ -1,0 +1,27 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "- npm init - install express, jade, nodemon - set up an express application, send some data, see that we can get it running - create .bowerrc file (for controlling directory of vendor files) - install bootstrap, angular, angular-route - create a static route to serve vendor files - create app.js to create an angular app - create an angular controller - create angular routes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antoniablair/ce-9053-week-10-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoniablair/ce-9053-week-10-express/issues"
+  },
+  "homepage": "https://github.com/antoniablair/ce-9053-week-10-express",
+  "dependencies": {
+    "express": "^4.13.1",
+    "jade": "^1.11.0",
+    "node": "0.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.4.0"
+  }
+}

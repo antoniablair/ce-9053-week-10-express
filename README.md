@@ -44,3 +44,8 @@ then change the "hello world" section of server.js to
 res.render("index");
 
 - add app.set("view engine", "jade"); to sever.js
+- So now we're going to set up staticfiles so that bootstrap can find them
+- 
+
+Add to server.js between set and get:
+app.use(express.static(__dirname + "/public"));
