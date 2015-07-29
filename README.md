@@ -49,3 +49,14 @@ res.render("index");
 
 Add to server.js between set and get:
 app.use(express.static(__dirname + "/public"));
+
+Add above that:
+app.set("view engine", "jade");
+
+
+bower install angular
+run your preview and type "angular" in the console
+if angular is loaded, it will return an object
+
+Set things up so within your public folder you have a file called app.js for the 
+application to live in
