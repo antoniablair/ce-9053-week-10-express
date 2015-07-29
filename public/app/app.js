@@ -6,7 +6,25 @@
 
 // If you have no dependencies you need to put in an empty []
 // or you will get an error "myworld cannot be found"
-var app = angular.module("myWorld", []);
+
+//for app.config routeProvider and locationprovider, install angular-route
+// add 'ngRoute' to the [ ] 
+// 
+var app = angular.module("myWorld", ['ngRoute']);
+
+//config your application for routes
+app.config(function($routeProvider, $locationProvider){
+    $routeProvider
+        .when("/", {
+            template: "Home Page"
+        })
+        .when("/things", {
+            template: "Things Page"
+        })
+        .when("/people", {
+            template: "People Page"
+        })
+});
 
 // everytime you use a controller that function is instantiated
 app.controller("MyCtrl", function($scope){

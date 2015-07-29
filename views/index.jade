@@ -3,12 +3,15 @@ html
         link(rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css")
         script(src="/vendor/angular/angular.js")
         script(src="/app/app.js")
+        script(src="/vendor/angular-route/angular-route.js")
     body(ng-app="myWorld")
         ul.nav.nav-tabs
             li
-                a(href="/") Home
+                a(href="/#/") Home
             li
-                a(href="/things") Things
+                a(href="/#/things") Things
+            li  
+                a(href="/#/people") People
 
             
         .container
@@ -17,12 +20,8 @@ html
             // angular manipulates the dom
             // for sanity check you can add {{ 5 * 5 }}  to page and see if it loads as 25
             .well Welcome to My World {{ 5 * 5 }} 
-            
-            .alert
-                div(ng-controller="MyCtrl")
-            .alert.alert-warning
-                div(ng-controller="MyCtrl") {{ name }}
-                    form.form
-                        div.form-group
-                            label Name
-                            input.form-control(ng-model="name")
+
+            //depending what the route is i will load different things in the view
+            // in express, we configured our routes on the server side. app.get/things etc
+            // we'll do this on the client side with angular-route
+            div(ng-view)
